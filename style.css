@@ -1,0 +1,247 @@
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ヘッダー */
+header{
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+.header-logo{
+  width: 150px;
+  height:50px;
+  float: left;
+}
+
+.header-right{
+  float: right;
+}
+
+.header-right a{
+  color: black;
+  font-size: 12px;
+}
+
+li{
+  list-style: none;
+  float: left;
+  padding-right: 20px;
+}
+
+/* メニュー */
+.menu{
+  background-color: rgba(167, 214, 241, 0.521);
+  font-size: 15px;
+  padding: 12px 0;
+  text-align: center;
+  width: 100%; 
+  margin-top: 70px;
+}
+
+.menu-icon{
+  margin-right:60px;
+}
+
+.btn-menu{
+  padding: 8px 30px;
+  opacity: 0.7;
+  color: black;
+  display: inline-block;
+  margin:0 30px;
+  transition: all 0.9s;
+}
+
+.btn-menu:hover {
+  opacity: 1;
+  background-color: white;
+  font-size: 18px;
+  }
+
+.fa{
+  padding-right: 5px;
+}
+
+/* メイン */
+.top-wrapper{
+  background-image: url(https://github.com/ayanatravel/ATA-TOP/blob/main/images/sea.jpeg?raw=true);
+  background-size: cover;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 300px 0 200px 0;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.top-wrapper h1{
+  font-size: 50px;
+  line-height: 30px;
+}
+
+.top-wrapper span{
+  color:maroon;
+  font-size: 65px;
+}
+
+.top-wrapper p{
+  font-size: 18px;
+}
+
+/* お知らせ */
+.news-heading{
+  text-align: center;
+  padding: 10px 0px ;
+  background-color: rgba(167, 214, 241, 0.521);
+  height: 28px;
+}
+
+.news dl{
+  display:flex;
+  padding-top: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 300px;
+}
+
+.news dt{
+  width: 15%;
+  padding: 5px;
+}
+
+.news dd {
+  width: 75%;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.news dd a{
+  color: black;
+}
+
+.news dt span{
+  color: white;
+  background-color: maroon;
+  padding: 5px 5px;
+  font-size: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.news  dt time{
+  color: gray;
+  font-size: 15px;
+}
+
+/* おすすめ */
+.recommend-heading{
+  text-align: center;
+  padding: 10px 0px ;
+  background-color: rgba(167, 214, 241, 0.521);
+  height: 28px;
+}
+
+/* スワイパー */
+.swiper-slide img{
+  display: block;
+  margin:  0 auto;
+  margin-top: 30px;
+}
+
+.swiper-button-prev{
+  color:gray;
+}
+
+.swiper-button-next{
+  color:gray;
+}
+
+.swiper-pagination{
+  position: relative;
+  margin-top: 20px;
+}
+.swiper-pagination-bullet-active{
+  background:maroon;
+}
+
+/* sns */
+.sns {
+  text-align: center;
+}
+.sns-heading{
+  padding: 10px 0px ;
+  background-color: rgba(167, 214, 241, 0.521);
+  height: 28px;
+  margin-top: 40px;
+}
+
+.line{
+  color: rgb(16, 216, 16);
+}
+.instagram{
+  color:rgb(175, 52, 159);
+}
+
+.twitter{
+  color:rgb(21, 165, 248)
+}
+
+.facebook{
+  color: rgb(71, 82, 240);
+}
+
+.youtube{
+  color: red;
+}
+
+.fab{
+  padding: 0 30px;
+  font-size: 50px;
+}
+
+.btn-sns{
+  opacity: 0.8;
+  display: inline-block;
+  margin:0 30px;
+}
+
+.btn-sns:hover {
+  opacity: 1;
+  }
+
+/* フッター */
+footer{
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  top: 0;
+  border-top:  rgba(167, 214, 241, 0.521) solid 1px;
+  margin-bottom: 40px;
+}
+
+.footer-list a{
+  color: black;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer-list li{
+  padding-left: 30px;
+}
+
+.footer-right{
+  font-size: 10px;
+  color: gray;
+  float: right;
+}
