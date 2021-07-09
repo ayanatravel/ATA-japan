@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayana Travel Agency</title>
+  <title>ATA  japan</title>
   <script src="https://kit.fontawesome.com/f7f0ffe030.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="style.css">  
   <script src="script.js" defer></script>
+ 
+
 
 </head>
 <body>
@@ -17,7 +17,7 @@
   <header>
     <div class="container">
       <div class="header-left">
-        <img class="header-logo" src="images/header-logo.jpeg">
+        <a href="images/"><img class="header-logo" src="images/header-logo.jpeg"></a>
       </div>
       <div class="header-right">
         <ul>
@@ -32,8 +32,10 @@
   <div class="menu-wrapper">
     <div class="container">
       <div class="menu">
-          <a href="file:///Users/ayana/Desktop/ATA%20TEST/ATA%20%E5%9B%BD%E5%86%85%E6%97%85%E8%A1%8C/index.html" class="btn-menu"><span class="fa fa-train"></span>国内旅行</a>
-          <a href="#" class="btn-menu"><span class="fa fa-plane"></span>海外旅行</a>
+        <a href="#" class="menu-btn"><span class="fa fa-hotel"></span>国内ホテル</a>
+        <a href="#" class="menu-btn"><span class="fa fa-train"></span>JR＋ホテル</a>
+        <a href="#" class="menu-btn"><span class="fa fa-plane"></span>AIR＋ホテル</a>
+        <a href="#" class="menu-btn"><span class="fa fa-hiking"></span>オプショナルツアー</a>
         </div>
       </div>
     </div>
@@ -41,72 +43,140 @@
   <!-- トップ -->
   <div class="top-wrapper">
     <div class="container">
-      <h1><span>A</span>yana  <span>T</span>ravel  <span>A</span>gency</h1>
-      <p>さあ、思い立ったら旅に出よう</p>
+      <h2 class="top-title">国内ホテル予約</h2>
+    <form action="search-result">
+      <div class="search">
+        <p>宿泊地・キーワード</p>
+        <input id="search-input" type="text" name="search-key" placeholder="ホテル名を入力">
+      </div>
+      <div class="date">
+        <p>宿泊日</p>
+        <input type="date"></input>
+      </div>
+      <div class="people-number">
+        <p>人数</p>
+        <select name="people">
+          <option value="1">1名</option>
+          <option value="2">2名</option>
+          <option value="3">3名</option>
+        </select>
+      </div>
+      <div class="submit">
+        <input id="search-button" type="submit" name="submit" value="検索" method="get">
+      </div>
+    </form>
     </div>
   </div>
-  <!-- お知らせ -->
-  <div class="news">
+  <!-- 地図 -->
+  <div class="japan-map">
     <div class="container">
-      <h3 class="news-heading">NEWS</h3>
-      <dl>
-        <dt><span>セール</span>
-          <time>2020.07.03</time></dt>
-          <dd><a href="#">期間限定タイムセール実施中！</a></dd>
-        <dt><span>お知らせ</span>
-        <time>2020.07.01</time></dt>
-        <dd><a href="#">HPが開設されました！</a></dd>
-      </dl>
+      <h3 class=heading>地図から探す</h3>
+      <img src="images/" alt="日本地図">
+      <span class="area-btn area1" data-area="1">北海道・東北</span>
+      <span class="area-btn area2" data-area="2">関東</span>
+      <span class="area-btn area3" data-area="3">中部</span>
+      <span class="area-btn area4" data-area="4">近畿</span>
+      <span class="area-btn area5" data-area="5">中国・四国</span>
+      <span class="area-btn area6" data-area="6">九州・沖縄</span>
+      <div class="area-overlay"></div>
+      <div class="pref-area">
+        <div class="pref-list" data-list="1">
+          <div data-id="1">北海道</div>
+          <div data-id="2">青森</div>
+          <div data-id="4">宮城</div>
+          <div data-id="5">秋田</div>
+          <div data-id="6">山形</div>
+          <div data-id="7">福島</div>
+        </div>
+        <div class="pref-list" data-list="2">
+          <div data-id="8">茨城</div>
+          <div data-id="9">栃木</div>
+          <div data-id="10">群馬</div>
+          <div data-id="11">埼玉</div>
+          <div data-id="12">千葉</div>
+          <div data-id="13">東京</div>
+          <div data-id="14">神奈川</div>
+          <div></div>
+        </div>
+        <div class="pref-list" data-list="3">
+          <div data-id="15">新潟</div>
+          <div data-id="16">富山</div>
+          <div data-id="17">石川</div>
+          <div data-id="18">福井</div>
+          <div data-id="19">山梨</div>
+          <div data-id="20">長野</div>
+          <div data-id="21">岐阜</div>
+          <div data-id="22">静岡</div>
+          <div data-id="23">愛知</div>
+          <div></div>
+        </div>
+        <div class="pref-list" data-list="4">
+          <div data-id="24">三重</div>
+          <div data-id="25">滋賀</div>
+          <div data-id="26">京都</div>
+          <div data-id="27">大阪</div>
+          <div data-id="28">兵庫</div>
+          <div data-id="29">奈良</div>
+          <div data-id="30">和歌山</div>
+          <div></div>
+        </div>
+        <div class="pref-list" data-list="5">
+          <div data-id="31">鳥取</div>
+          <div data-id="32">島根</div>
+          <div data-id="33">岡山</div>
+          <div data-id="34">広島</div>
+          <div data-id="35">山口</div>
+          <div data-id="36">徳島</div>
+          <div data-id="37">香川</div>
+          <div data-id="38">愛媛</div>
+          <div data-id="39">高知</div>
+          <div></div>
+        </div>
+        <div class="pref-list" data-list="6">
+          <div data-id="40">福岡</div>
+          <div data-id="41">佐賀</div>
+          <div data-id="42">長崎</div>
+          <div data-id="43">熊本</div>
+          <div data-id="44">大分</div>
+          <div data-id="45">宮崎</div>
+          <div data-id="46">鹿児島</div>
+          <div data-id="47">沖縄</div>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- おすすめ -->
-  <div class="recommend">
+  <div class="popular">
     <div class="container">
-      <h3 class="recommend-heading">RECOMMEND</h3>
-      <div class="swiper-container">
-        <!-- スワイパー -->
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/hawaii.jpeg" alt="hawaii">
-          </div>
-          <div class="swiper-slide">
-            <img src="images/london.jpeg" alt="london">
-          </div>
-          <div class="swiper-slide">
-            <img src="images/hiroshima.jpg" alt="hiroshima">
-          </div>
+      <h3 class=heading>人気エリアから探す</h3>
+      <div class="popular-area">
+        <div class="family"> 
+          <p>家族連れ</p>
+          <ol>
+            <li><a href="https://www.okinawastory.jp/">沖縄</a></li>
+            <li><a href="https://www.awajishima-kanko.jp/">淡路島</a></li>
+            <li><a href="https://www.visit-hokkaido.jp/">北海道</a></li>
+          </ol>
         </div>
-        <div class="swiper-pagination"></div>      
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>      
+        <div class="themepark">
+          <p >テーマパーク</p>
+          <ol>
+            <li><a href="https://www.tokyodisneyresort.jp/tdl/">東京ディズニーリゾート</a></li>
+            <li><a href="https://www.usj.co.jp/web/ja/jp">ユニバーサル・スタジオ・ジャパン</a></li>
+            <li><a href="https://www.nagashima-onsen.co.jp/">ナガシマスパーランド</a></li>
+          </ol>
+        </div>
+        <div class="onsen">
+          <p >温泉</p>
+          <ol>
+            <li><a href="http://www.arima-onsen.com/">有馬</a></li>
+            <li><a href="https://dogo.jp/">道後</a></li>
+            <li><a href="https://www.visit-oita.jp/spa/">大分（別府・湯布院）</a></li>
+          </ol>
+        </div>
       </div>
     </div>
-    <!-- 公式SNS -->
-    <div class="sns">
-      <div class="container">
-        <h3 class="sns-heading">公式SNS</h3>
-        <a href="#" class="btn-sns line"><span class="fab fa-line"></span></a>
-        <a href="#" class="btn-sns instagram"><span class="fab fa-instagram-square"></span></a>
-        <a href="#" class="btn-sns twitter"><span class="fab fa-twitter-square"></span></a>
-        <a href="#" class="btn-sns facebook"><span class="fab fa-facebook-square"></span></a>
-        <a href="#" class="btn-sns youtube"><span class="fab fa-youtube-square"></span></a>
-      </div>
-    </div>
-    <!-- フッター -->
-    <footer>
-      <div class="container">
-        <div class="footer-list">
-          <ul>
-            <li><a href="#">会社案内</a></li>
-            <li><a href="#">個人情報の取扱</a></li>
-            <li><a href="#">旅行条件書</a></li>
-            <li><a href="#">標識・約款</a></li>
-          </ul>
-          <p class="footer-right">Copyright © ATA Co.,Ltd. All Rights Reserved. </p>
-        </div>
-        </div>
-      </div>
-    </footer>
+  </div>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>  
 </body>
 </html>
